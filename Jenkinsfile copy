@@ -27,7 +27,7 @@ pipeline {
   stage('Set APP_KEY') {
             steps {
                 script {
-                    docker.image('php:8.2-cli').inside('-u root') {  // Gunakan PHP versi 8.3
+                    docker.image('php:8.2.24-cli').inside('-u root') {  // Gunakan PHP versi 8.3
                         sh '''
                             php --version  // Verifikasi versi PHP yang digunakan
                             php artisan key:generate
