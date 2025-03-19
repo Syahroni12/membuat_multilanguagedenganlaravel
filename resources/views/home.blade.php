@@ -29,8 +29,7 @@
                     </select>
                 </div>
             </div>
-            <h3>{{ GoogleTranslate::trans('how are you', app()->getLocale()) }}</h3>
-            <h3>{{ GoogleTranslate::trans('are you ok', app()->getLocale()) }}</h3>
+            @yield('content')
         </div>
         <!-- Optional JavaScript; choose one of the two! -->
 

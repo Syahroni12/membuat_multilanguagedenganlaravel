@@ -9,7 +9,8 @@ class LangController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $contoh = 'Ini adalah contoh';
+        return view('tes', compact('contoh'));
     }
 
     public function change(Request $request)
